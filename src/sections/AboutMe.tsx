@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FileText, ArrowUpRight, Globe, Clock, MapPin } from 'lucide-react';
-import profileImg from '../assets/images/profile/alqamah-digital-marketer.webp';
+import aboutBannerImg from '../assets/images/profile/alqamas-marketing-portfolio-banner.webp';
 
 export const AboutMe: React.FC = () => {
   const [time, setTime] = useState('');
@@ -189,7 +189,7 @@ export const AboutMe: React.FC = () => {
 
           {/* Right Column: Narrative Story + Photo */}
           <div className="content-col" style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
-            {/* Portrait Frame with prominent organic ribbon loops (matching Facebook Digital Marketing Banner) */}
+            {/* Banner Frame (Alqamas Marketing Portfolio Banner) */}
             <div
               className="about-portrait-frame"
               style={{
@@ -198,79 +198,21 @@ export const AboutMe: React.FC = () => {
                 overflow: 'hidden',
                 backgroundColor: '#000000',
                 border: '1px solid var(--border-default)',
-                maxHeight: '520px',
                 display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'flex-start',
+                alignItems: 'center',
+                boxShadow: '0 20px 40px -15px rgba(0, 0, 0, 0.7)',
               }}
             >
-              {/* Organic Sweeping Blue & Green Ribbon Loops (from Facebook Digital Marketing Banner) */}
-              <svg
-                viewBox="0 0 600 520"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                style={{
-                  position: 'absolute',
-                  inset: 0,
-                  width: '100%',
-                  height: '100%',
-                  pointerEvents: 'none',
-                  zIndex: 1,
-                  overflow: 'visible',
-                  filter: 'drop-shadow(0 0 18px rgba(14, 37, 130, 0.45)) drop-shadow(0 0 18px rgba(30, 121, 9, 0.4))',
-                }}
-              >
-                {/* Left Side Sweeping Blue Ribbon Loop */}
-                <path
-                  d="M 220,-40 C 60,60 -60,200 -20,380 C 10,500 130,520 200,420 C 270,320 240,140 180,60"
-                  stroke="#12389d"
-                  strokeWidth="10"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  opacity="0.92"
-                />
-
-                {/* Left Side Sweeping Green Ribbon Loop */}
-                <path
-                  d="M 170,-60 C -10,30 -100,220 -50,400 C -10,530 110,560 170,450 C 230,340 190,120 130,30"
-                  stroke="#1e7909"
-                  strokeWidth="11"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  opacity="0.94"
-                />
-
-                {/* Right Side Sweeping Green Ribbon Loop */}
-                <path
-                  d="M 380,480 C 520,440 640,320 620,160 C 600,40 480,-10 400,60 C 330,120 350,300 420,420"
-                  stroke="#1e7909"
-                  strokeWidth="11"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  opacity="0.94"
-                />
-
-                {/* Right Side Sweeping Blue Ribbon Loop */}
-                <path
-                  d="M 420,520 C 580,470 680,310 650,130 C 620,-20 460,-40 370,50 C 300,120 320,310 390,440"
-                  stroke="#12389d"
-                  strokeWidth="10"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  opacity="0.92"
-                />
-              </svg>
-
               <img
-                src={profileImg}
-                alt="Alqamah Khan portrait"
+                src={aboutBannerImg}
+                alt="Alqamah Khan — Digital Marketing Specialist"
                 style={{
                   width: '100%',
-                  maxWidth: '420px',
                   height: 'auto',
-                  objectFit: 'contain',
-                  position: 'relative',
-                  zIndex: 2,
+                  display: 'block',
+                  objectFit: 'cover',
+                  objectPosition: 'center',
                 }}
               />
             </div>
@@ -313,7 +255,7 @@ export const AboutMe: React.FC = () => {
       <style>{`
         @media (max-width: 768px) {
           .about-portrait-frame {
-            max-height: 380px !important;
+            border-radius: 14px !important;
           }
         }
       `}</style>
