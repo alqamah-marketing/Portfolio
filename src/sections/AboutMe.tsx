@@ -116,7 +116,7 @@ export const AboutMe: React.FC = () => {
             {/* Quick Action Links */}
             <div style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
               <a
-                href="/alqamah-khan-resume.pdf"
+                href="./alqamah-khan-resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{

@@ -66,7 +66,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="/alqamah-khan-resume.pdf"
+                  href="./alqamah-khan-resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ fontSize: '14px', color: 'var(--color-gold)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}

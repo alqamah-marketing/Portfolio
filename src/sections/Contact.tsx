@@ -179,7 +179,7 @@ export const Contact: React.FC = () => {
 
           {/* Tertiary: Download Resume */}
           <a
-            href="/alqamah-khan-resume.pdf"
+            href="./alqamah-khan-resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             style={{

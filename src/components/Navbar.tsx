@@ -156,7 +156,7 @@ export const Navbar: React.FC = () => {
           {/* Right Action: Resume Button */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
             <a
-              href="/alqamah-khan-resume.pdf"
+              href="./alqamah-khan-resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="resume-btn"
@@ -311,7 +311,7 @@ export const Navbar: React.FC = () => {
 
             <div style={{ marginTop: '24px', paddingTop: '24px', borderTop: '1px solid var(--border-default)' }}>
               <a
-                href="/alqamah-khan-resume.pdf"
+                href="./alqamah-khan-resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
